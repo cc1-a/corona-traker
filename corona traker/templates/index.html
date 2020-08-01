@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/the.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/bootsrap.css')}}">
+
+    <title>Covid meter</title>
+<style type="text/css">
+    div{
+        opacity: 0%;
+        animation-name: am;
+        animation-duration: 6s;
+        animation-delay: 1;
+        animation-fill-mode: forwards;
+    }
+    @keyframes am{
+        0%{opacity: 0;}
+        25%{opacity: 0.5;}
+        50%{opacity: 1;}
+        75%{opacity: 1.5;}
+        100%{opacity: 2;}
+    }
+    body{
+        opacity: 0%;
+        animation-name: am;
+        animation-duration: 6s;
+        animation-delay: 1;
+        animation-fill-mode: forwards;
+    }
+    }
+
+
+</style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark width">
+        <a class="navbar-brand" href="#">Home</a>
+    </nav>
+    {% block con %} {% endblock %}
+    <!-- As a link -->
+
+
+
+    <div class="the-amodh"> 
+        <a href="https://www.worldometers.info/coronavirus/country/sri-lanka/">
+
+            <div class="the-amodh">
+                <footer>
+                    <br>
+                    <br> Click here to view the source</footer>
+            </div>
+
+        </a> 
+    </div>
+
+</body>
+
+</html>

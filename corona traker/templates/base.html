@@ -1,0 +1,42 @@
+{% extends 'index.html' %} {% block con %}
+<!-- The patiants -->
+<div class="nopdiv">
+    <div>
+        <h1 class="header-text">Coronavirus Cases</h1>
+    </div>
+    <h1 class="nuber_of_patiants">{{post.no_of_patians}}</h1>
+    <a class="link-source-class" href="https://www.worldometers.info/coronavirus/country/sri-lanka/">
+        <small>Source</small></a>
+
+</div>
+<!-- The deaths -->
+<div class="nopdiv">
+    <div>
+        <h1 class="header-text">Deaths</h1>
+    </div>
+    <h1 class="nuber_of_patiants">{{post.no_of_death}}</h1>
+    <a class="link-source-class" href="https://www.worldometers.info/coronavirus/country/sri-lanka/">
+        <small>Source</small></a>
+
+</div>
+
+<div class="nopdiv">
+    <div>
+        <h1 class="header-text">Recovered</h1>
+    </div>
+    <h1 class="nuber_of_patiants">{{post.no_of_recovered}}</h1>
+    <a class="link-source-class" href="https://www.worldometers.info/coronavirus/country/sri-lanka/">
+        <small>Source</small></a>
+
+</div>
+
+<div class="nopdiv">
+    <div>
+        <h1 class="header-text">Recovered</h1>
+    </div>
+    <h1 class="nuber_of_patiants">{{post.lates_news_in_sriLanka}}</h1>
+    <a class="link-source-class" href="https://www.worldometers.info/coronavirus/country/sri-lanka/">
+        <small>Source</small></a>
+
+</div>
+{% endblock %}
