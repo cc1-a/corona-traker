@@ -8,45 +8,64 @@
     <link rel="stylesheet" href="{{url_for('static', filename='css/bootsrap.css')}}">
 
     <title>Covid meter</title>
-<style type="text/css">
-    div{
-        opacity: 0%;
-        animation-name: am;
-        animation-duration: 6s;
-        animation-delay: 1;
-        animation-fill-mode: forwards;
-    }
-    @keyframes am{
-        0%{opacity: 0;}
-        25%{opacity: 0.5;}
-        50%{opacity: 1;}
-        75%{opacity: 1.5;}
-        100%{opacity: 2;}
-    }
-    body{
-        opacity: 0%;
-        animation-name: am;
-        animation-duration: 6s;
-        animation-delay: 1;
-        animation-fill-mode: forwards;
-    }
-    }
+    <style type="text/css">
+        div {
+            opacity: 0%;
+            animation-name: am;
+            animation-duration: 6s;
+            animation-delay: 1;
+            animation-fill-mode: forwards;
+        }
 
+        @keyframes am {
+            0% {
+                opacity: 0;
+            }
 
-</style>
+            25% {
+                opacity: 0.5;
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            75% {
+                opacity: 1.5;
+            }
+
+            100% {
+                opacity: 2;
+            }
+        }
+
+        body {
+            opacity: 0%;
+            animation-name: am;
+            animation-duration: 6s;
+            animation-delay: 1;
+            animation-fill-mode: forwards;
+        }
+
+    </style>
 
 </head>
 
 <body>
     <nav class="navbar navbar-dark bg-dark width">
         <a class="navbar-brand" href="#">Home</a>
+        <a class="navbar-brand" href="https://www.worldometers.info/coronavirus/country/sri-lanka/"><span>{{post.lates_news_in_sriLanka}}</span></a>
+        
     </nav>
+    <br>
+    
+    <br>
     {% block con %} {% endblock %}
     <!-- As a link -->
 
 
 
-    <div class="the-amodh"> 
+    <div class="the-amodh">
         <a href="https://www.worldometers.info/coronavirus/country/sri-lanka/">
 
             <div class="the-amodh">
@@ -55,7 +74,7 @@
                     <br> Click here to view the source</footer>
             </div>
 
-        </a> 
+        </a>
     </div>
 
 </body>
